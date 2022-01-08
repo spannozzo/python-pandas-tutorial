@@ -1,5 +1,3 @@
-# print('hello python')
-
 from IPython.display import display
 import pandas as pd
 

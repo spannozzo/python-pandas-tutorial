@@ -1,30 +1,9 @@
+from IPython.display import display
 import pandas as pd
 
-data = [
-    { 
-        "make": "Toyota", 
-        "model": "Corolla",
-        "color": "Blue"
-    },
-    {
-        "make": "Ford", 
-        "model": "K",
-        "color": "Yellow"
-    },
-    {
-        "make": "Porche", 
-        "model": "Cayenne",
-        "color": "White"
-    }
-]
 
-df = pd.DataFrame(data)
-df = df.append({
-    "make": "Tesla", 
-    "model": "Model S",
-    "color": "Red"
-},ignore_index=True)
+df = pd.read_csv('.learn/assets/pokemon_data.csv')
 
-print(df.iloc)
+display(df.head())
 
-
+print(df.iloc[133,6])
